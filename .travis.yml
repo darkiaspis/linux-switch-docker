@@ -1,0 +1,9 @@
+sudo: required
+language: C
+services:
+- docker
+before_install:
+- docker info
+- docker build -t dark1asp1s/linux-switch .
+script:
+- docker images | grep -q dark1asp1s/linux-switch
