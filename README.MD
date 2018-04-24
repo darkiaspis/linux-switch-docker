@@ -28,7 +28,7 @@ $ docker pull dark1asp1s/linux-switch
 Actually, we use the docker image for getting the [fail0verflow] repositories and for cross-compiling by arm-gcc toolchains. The whole commands are included in commands.sh file. So just be sure that the current repository is cloned onto your pc host, then:
 ```sh
 $ cd linux-switch-docker
-$ docker run -it -d -v $PWD:/opt dark1asp1s/linux-switch /bin/bash -c "cd /opt; ./commands.sh"
+$ docker run -it -v $PWD:/opt dark1asp1s/linux-switch /bin/bash -c "cd /opt; ./commands.sh"
 ```
 And grab a long coffee... depending on the machine (and on the Docker configuration, too) it takes long time to completion. Anyway, once terminated you should see the all the outputs put into the shofEL2 folder, ready to be launched.
 
