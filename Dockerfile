@@ -4,6 +4,4 @@ LABEL maintainer="darkiaspis <darkiaspis@gmail.com>"
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install git build-essential gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu python python-dev swig m4 libssl-dev bison flex curl zlib1g-dev bc wget &&\
-    wget http://cz.archive.ubuntu.com/ubuntu/pool/multiverse/l/linux-firmware-nonfree/linux-firmware-nonfree_1.14ubuntu3_all.deb &&  apt install ./linux-firmware-nonfree_1.14ubuntu3_all.deb && \
-    rm -f ./linux-firmware-nonfree_1.14ubuntu3_all.deb
+    apt-get -y install git build-essential gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu python python-dev swig m4 libssl-dev bison flex curl zlib1g-dev bc linux-firmware
