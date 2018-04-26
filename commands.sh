@@ -3,10 +3,10 @@
 #Let clone fail0verflow repositories
 cd /opt/
 #Grab a coffee... downloading quite massive amount of bytes!
-git clone https://github.com/fail0verflow/shofel2.git & \
-git clone --recursive https://github.com/fail0verflow/switch-coreboot.git coreboot & \
-git clone https://github.com/fail0verflow/switch-u-boot.git u-boot & \
-git clone https://github.com/fail0verflow/switch-linux.git linux & \
+git clone https://github.com/fail0verflow/shofel2.git && \
+git clone --recursive https://github.com/fail0verflow/switch-coreboot.git coreboot && \
+git clone https://github.com/fail0verflow/switch-u-boot.git u-boot && \
+git clone https://github.com/fail0verflow/switch-linux.git linux && \
 #Albeit we are not going to compile the usb-loader, we just clone it from the container by exploiting the git command \
 git clone https://github.com/boundarydevices/imx_usb_loader.git
 
