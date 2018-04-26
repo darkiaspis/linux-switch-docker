@@ -6,7 +6,7 @@ before_install:
 - docker info
 - docker build -t dark1asp1s/linux-switch .
 before_script:
-- docker run -it -v $PWD:/opt dark1asp1s/linux-switch /bin/bash -c "cd /opt; ./commands.sh
+- docker run -it -v $PWD:/opt dark1asp1s/linux-switch /bin/bash -c "cd /opt; ./commands.sh"
 script:
 - docker images | grep -q dark1asp1s/linux-switch
 after_script:
