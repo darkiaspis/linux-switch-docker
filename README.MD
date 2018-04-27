@@ -21,7 +21,7 @@ $ docker build -t <image-name> .
 ```
 Otherwise, if you are not a docker enthusiast, just pull it out from the [Docker-Hub]:
 ```sh
-$ docker pull dark1asp1s/linux-switch
+$ docker pull dark1asp1s/linux-switch-docker
 ```
 
 ## X-Compiling
